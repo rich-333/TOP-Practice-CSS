@@ -38,6 +38,7 @@ body {
     color: var(--text-color-primary);
     font-weight: 600;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .navbar__link {
@@ -46,6 +47,7 @@ body {
     color: var(--text-color-secondary);
     margin: 0 15px;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .navbar__link:hover, .navbar__logo:hover {
@@ -92,9 +94,6 @@ body {
     height: 180px;
 }
 
-.main {
-    margin: 15px 280px;
-}
 
 /* INFORMATION RANDOM */
 
@@ -104,7 +103,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 80px;
+    margin: 15px 280px 80px;
 }
 
 .information__title {
@@ -141,20 +140,8 @@ body {
 /* CITA */
 
 .quote {
-    position: relative;
-    padding: 70px 0;
-}
-
-.quote::before {
-    content: '';
-    position: absolute;
-    top: /*104%*/5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: /*100%*/100vw;
-    height: /*20%*/100%;
     background-color: var(--background-color-quote);
-    z-index: -1;
+    padding: 60px 280px;
 }
 
 .quote__text {
@@ -168,4 +155,34 @@ body {
     display: flex;
     justify-content: end;
     font-weight: 700;
+}
+
+/* REGISTRARSE */
+
+.signup {
+    margin: 75px 200px; 
+    padding: 35px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--button-color);
+    color: #f9faf8;
+    border-radius: var(--border-radius-button);
+}
+
+.signup__title {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.signup__paragraph {
+    margin: 0;
+}
+
+.signup__link {
+    padding: 5px 25px;
+    border: 2px solid var(--text-color-primary);
+    border-radius: var(--border-radius-button);
+    font-weight: 800;
+    cursor: pointer;
 }
