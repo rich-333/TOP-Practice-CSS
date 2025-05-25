@@ -4,6 +4,7 @@
     --text-font-small: 18px;
 
     --background-color-header: #1f2937;
+    --background-color-quote: #e5e7eb;
 
     --button-color: #3882f6;
 
@@ -92,7 +93,7 @@ body {
 }
 
 .main {
-    padding: 15px 200px;
+    margin: 15px 280px;
 }
 
 /* INFORMATION RANDOM */
@@ -103,6 +104,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 80px;
 }
 
 .information__title {
@@ -113,12 +115,15 @@ body {
 
 .information__container {
     display: flex;
+    gap: 25px;
 }
 
 .information__content {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    width: 130px;
+    height: auto;
+    gap: 10px;
 }
 
 .information__img {
@@ -130,4 +135,37 @@ body {
 
 .information__text {
     font-size: 16px;
+    text-align: center;
+}
+
+/* CITA */
+
+.quote {
+    position: relative;
+    padding: 70px 0;
+}
+
+.quote::before {
+    content: '';
+    position: absolute;
+    top: /*104%*/5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: /*100%*/100vw;
+    height: /*20%*/100%;
+    background-color: var(--background-color-quote);
+    z-index: -1;
+}
+
+.quote__text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    font-weight: 100;
+}
+
+.quote__author {
+    display: flex;
+    justify-content: end;
+    font-weight: 700;
 }
