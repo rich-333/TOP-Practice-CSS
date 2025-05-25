@@ -1,8 +1,11 @@
 :root {
     --text-color-primary: #f9faf8;
     --text-color-secondary: #e5e7eb;
+    --text-font-small: 18px;
 
     --background-color-header: #1f2937;
+
+    --button-color: #3882f6;
 
     --border-radius-button: 5px;
 }
@@ -65,7 +68,7 @@ body {
 }
 
 .header__text {
-    font-size: 18px;
+    font-size: var(--text-font-small);
     color: var(--text-color-secondary);
     margin: 0;
     padding: 10px 0;
@@ -73,7 +76,7 @@ body {
 }
 
 .header__signup {
-    background-color: #3882f6;
+    background-color: var(--button-color);
     border-radius: var(--border-radius-button);
     border: none;
     font-weight: 600;
@@ -86,4 +89,45 @@ body {
     background-color: #9c9c9c;
     width: 600px;
     height: 180px;
+}
+
+.main {
+    padding: 15px 200px;
+}
+
+/* INFORMATION RANDOM */
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.information__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.information__container {
+    display: flex;
+}
+
+.information__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.information__img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid var(--button-color);
+    border-radius: 10px;
+}
+
+.information__text {
+    font-size: 16px;
 }
